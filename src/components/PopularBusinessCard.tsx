@@ -383,7 +383,7 @@ export const PopularBusinessCard = ({ business }: PopularBusinessCardProps) => {
         {business.starting_price && (
           <div className="absolute top-0 left-0 z-40">
             <span className="bg-gray-600 text-white text-xs font-medium px-2 py-1 shadow-lg uppercase rounded-tl-lg rounded-br-lg">
-              STARTS FROM {business.starting_price}
+              From $ {business.starting_price}/hour
             </span>
           </div>
         )}
