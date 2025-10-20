@@ -507,7 +507,7 @@ export const PopularServiceCard = ({ service }: PopularServiceCardProps) => {
         {service.base_price && (
           <div className="absolute top-2 left-2 z-40">
             <span className="text-white text-xs font-medium px-2 py-1 shadow-lg uppercase" style={{ backgroundColor: '#8E6CF4' }}>
-              From $ {service.base_price}/hour
+              From ${service.base_price}/hour
             </span>
           </div>
         )}
