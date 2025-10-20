@@ -400,6 +400,29 @@ export const FutsalCourtForm = () => {
           <CardContent className="space-y-4">
             <FormField
               control={form.control}
+              name="fieldType"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Are the field(s) you're listing for rent primarily indoor, outdoor, or do you offer both types? *</FormLabel>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select field type" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      <SelectItem value="Indoor">Indoor</SelectItem>
+                      <SelectItem value="Outdoor">Outdoor</SelectItem>
+                      <SelectItem value="Indoor/Outdoor">Indoor/Outdoor</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
               name="numberOfFields"
               render={({ field }) => (
                 <FormItem>
@@ -419,29 +442,6 @@ export const FutsalCourtForm = () => {
                           {num}
                         </SelectItem>
                       ))}
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="fieldType"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Are the sports facilities you listed above indoor, outdoor, or both? *</FormLabel>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select field type" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      <SelectItem value="Indoor">Indoor</SelectItem>
-                      <SelectItem value="Outdoor">Outdoor</SelectItem>
-                      <SelectItem value="Indoor/Outdoor">Indoor/Outdoor</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
