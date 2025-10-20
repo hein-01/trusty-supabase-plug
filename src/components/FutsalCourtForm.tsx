@@ -52,15 +52,18 @@ const formSchema = z.object({
   })),
   paymentMethods: z.object({
     cash: z.boolean(),
-    wechat: z.boolean(),
-    wechatPhone: z.string().optional(),
-    wechatName: z.string().optional(),
+    truemoney: z.boolean(),
+    truemoneyPhone: z.string().optional(),
+    truemoneyName: z.string().optional(),
     kpay: z.boolean(),
     kpayPhone: z.string().optional(),
     kpayName: z.string().optional(),
     paylah: z.boolean(),
     paylahPhone: z.string().optional(),
     paylahName: z.string().optional(),
+    grabpay: z.boolean(),
+    grabpayPhone: z.string().optional(),
+    grabpayName: z.string().optional(),
   }),
   facilities: z.array(z.string()),
   rules: z.array(z.string()),
@@ -155,9 +158,10 @@ export const FutsalCourtForm = () => {
       })),
       paymentMethods: {
         cash: false,
-        wechat: false,
+        truemoney: false,
         kpay: false,
         paylah: false,
+        grabpay: false,
       },
       facilities: [],
       rules: [],
@@ -569,23 +573,23 @@ export const FutsalCourtForm = () => {
             <div className="space-y-2">
               <FormField
                 control={form.control}
-                name="paymentMethods.wechat"
+                name="paymentMethods.truemoney"
                 render={({ field }) => (
                   <FormItem className="flex items-center space-x-2">
                     <FormControl>
                       <Checkbox checked={field.value} onCheckedChange={field.onChange} />
                     </FormControl>
                     <FormLabel className="!mt-0">
-                      WeChat Pay <span className="text-xs text-muted-foreground">(Please provide the phone number and name registered with your PayNow account.)</span>
+                      True Money <span className="text-xs text-muted-foreground">(Please provide the phone number and name registered with your True Money account.)</span>
                     </FormLabel>
                   </FormItem>
                 )}
               />
-              {form.watch("paymentMethods.wechat") && (
+              {form.watch("paymentMethods.truemoney") && (
                 <div className="grid grid-cols-2 gap-4 ml-6">
                   <FormField
                     control={form.control}
-                    name="paymentMethods.wechatPhone"
+                    name="paymentMethods.truemoneyPhone"
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
@@ -596,7 +600,7 @@ export const FutsalCourtForm = () => {
                   />
                   <FormField
                     control={form.control}
-                    name="paymentMethods.wechatName"
+                    name="paymentMethods.truemoneyName"
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
@@ -683,6 +687,49 @@ export const FutsalCourtForm = () => {
                   <FormField
                     control={form.control}
                     name="paymentMethods.paylahName"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormControl>
+                          <Input placeholder="Name" {...field} />
+                        </FormControl>
+                      </FormItem>
+                    )}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div className="space-y-2">
+              <FormField
+                control={form.control}
+                name="paymentMethods.grabpay"
+                render={({ field }) => (
+                  <FormItem className="flex items-center space-x-2">
+                    <FormControl>
+                      <Checkbox checked={field.value} onCheckedChange={field.onChange} />
+                    </FormControl>
+                    <FormLabel className="!mt-0">
+                      Grab Pay <span className="text-xs text-muted-foreground">(Please provide the phone number and name registered with your Grab Pay account.)</span>
+                    </FormLabel>
+                  </FormItem>
+                )}
+              />
+              {form.watch("paymentMethods.grabpay") && (
+                <div className="grid grid-cols-2 gap-4 ml-6">
+                  <FormField
+                    control={form.control}
+                    name="paymentMethods.grabpayPhone"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormControl>
+                          <Input placeholder="Phone Number" {...field} />
+                        </FormControl>
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="paymentMethods.grabpayName"
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
