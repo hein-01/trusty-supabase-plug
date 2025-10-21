@@ -445,7 +445,7 @@ export const PopularServiceCard = ({ service }: PopularServiceCardProps) => {
       <img 
         src={iconUrl} 
         alt={methodType}
-        className="w-full h-full object-contain"
+        className="w-full h-full object-cover object-top"
       />
     );
   };
