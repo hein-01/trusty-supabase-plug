@@ -418,9 +418,9 @@ export const PopularServiceCard = ({ service }: PopularServiceCardProps) => {
       'cashonarrival': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/Cash-on-arrival.jpg',
       'cash': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/Cash-on-arrival.jpg',
       'truemoney': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/grab-pay.jpg',
-      'kpay': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/kbz-pay.jpg',
-      'kbzpay': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/kbz-pay.jpg',
-      'paylah': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/pay-lah.jpg',
+      'kpay': 'https://raw.githubusercontent.com/hein-01/payments-icons/2469c77d1908221b5ab4efecb7c8ec16d8eefda4/kbz-pay-revised-1.jpg',
+      'kbzpay': 'https://raw.githubusercontent.com/hein-01/payments-icons/2469c77d1908221b5ab4efecb7c8ec16d8eefda4/kbz-pay-revised-1.jpg',
+      'paylah': 'https://raw.githubusercontent.com/hein-01/payments-icons/2469c77d1908221b5ab4efecb7c8ec16d8eefda4/pay-lah-revsied-1.jpg',
       'grabpay': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/true-money.jpg',
     };
     
