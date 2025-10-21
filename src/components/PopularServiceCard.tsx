@@ -799,7 +799,7 @@ export const PopularServiceCard = ({ service }: PopularServiceCardProps) => {
                   {paymentMethods.map((payment, index) => (
                     <div 
                       key={index}
-                      className="flex items-center justify-center rounded border border-gray-300 shadow-sm bg-white hover:shadow-md transition-shadow w-[60px] h-[30px] overflow-hidden"
+                      className="flex items-center justify-center rounded border border-gray-300 shadow-sm bg-white hover:shadow-md transition-shadow w-[56px] h-[28px] overflow-hidden"
                       title={payment.method_type}
                     >
                       {getPaymentMethodIcon(payment.method_type)}
@@ -819,7 +819,7 @@ export const PopularServiceCard = ({ service }: PopularServiceCardProps) => {
                   {paymentMethods.map((payment, index) => (
                     <div 
                       key={index}
-                      className="flex items-center justify-center rounded border border-gray-300 shadow-sm bg-white hover:shadow-md transition-shadow w-[60px] h-[30px] overflow-hidden"
+                      className="flex items-center justify-center rounded border border-gray-300 shadow-sm bg-white hover:shadow-md transition-shadow w-[56px] h-[28px] overflow-hidden"
                       title={payment.method_type}
                     >
                       {getPaymentMethodIcon(payment.method_type)}
