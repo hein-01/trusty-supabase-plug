@@ -415,13 +415,13 @@ export const PopularServiceCard = ({ service }: PopularServiceCardProps) => {
     
     // Map payment method types to image URLs
     const iconMap: Record<string, string> = {
-      'cashonarrival': 'https://raw.githubusercontent.com/hein-01/icons-payments/733556525af25cdcfc075e40f6f2995c3c1bba81/Cash-on-arrival.jpg',
-      'cash': 'https://raw.githubusercontent.com/hein-01/icons-payments/733556525af25cdcfc075e40f6f2995c3c1bba81/Cash-on-arrival.jpg',
-      'truemoney': 'https://raw.githubusercontent.com/hein-01/icons-payments/733556525af25cdcfc075e40f6f2995c3c1bba81/true-money.jpg',
-      'kpay': 'https://raw.githubusercontent.com/hein-01/icons-payments/733556525af25cdcfc075e40f6f2995c3c1bba81/kbz-pay.jpg',
-      'kbzpay': 'https://raw.githubusercontent.com/hein-01/icons-payments/733556525af25cdcfc075e40f6f2995c3c1bba81/kbz-pay.jpg',
-      'paylah': 'https://raw.githubusercontent.com/hein-01/icons-payments/733556525af25cdcfc075e40f6f2995c3c1bba81/pay-lah.jpg',
-      'grabpay': 'https://raw.githubusercontent.com/hein-01/icons-payments/733556525af25cdcfc075e40f6f2995c3c1bba81/grab-pay.jpg',
+      'cashonarrival': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/Cash-on-arrival.jpg',
+      'cash': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/Cash-on-arrival.jpg',
+      'truemoney': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/grab-pay.jpg',
+      'kpay': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/kbz-pay.jpg',
+      'kbzpay': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/kbz-pay.jpg',
+      'paylah': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/pay-lah.jpg',
+      'grabpay': 'https://raw.githubusercontent.com/hein-01/payments-icons/1d40ae68a7b71566733aa7ea5a420c376f8fe388/true-money.jpg',
     };
     
     // Find matching icon URL
