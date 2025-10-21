@@ -256,17 +256,17 @@ const Index = () => {
                 }} modules={[Autoplay]} className="desktop-business-slider">
                     <SwiperSlide>
                       <div className="h-[300px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
-                        <img src={mobileSlider1} alt="Local business directory app interface" className="w-full h-full object-contain" />
+                        <img src={mobileSlider1} alt="Local business directory app interface" className="w-full h-full object-cover object-top" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="h-[300px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
-                        <img src={mobileSlider2} alt="Small business owner managing online store" className="w-full h-full object-contain" />
+                        <img src={mobileSlider2} alt="Small business owner managing online store" className="w-full h-full object-cover object-top" />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="h-[300px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
-                        <img src={mobileSlider3} alt="Modern POS system interface" className="w-full h-full object-contain" />
+                        <img src={mobileSlider3} alt="Modern POS system interface" className="w-full h-full object-cover object-top" />
                       </div>
                     </SwiperSlide>
                   </Swiper>
