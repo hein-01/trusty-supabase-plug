@@ -196,30 +196,6 @@ const Index = () => {
                   Find a business or<br className="sm:hidden" /> Start your online business!
                 </h2>
                 
-                {/* Mobile Image Slider */}
-                <div className="w-full -mx-6 md:mx-0">
-                  <Swiper spaceBetween={0} slidesPerView={1} centeredSlides={false} autoplay={{
-                  delay: 4500,
-                  disableOnInteraction: false
-                }} modules={[Autoplay]} className="mobile-business-slider px-0">
-                    <SwiperSlide>
-                      <div className="h-[400px] rounded-none md:rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 md:hover:scale-105">
-                      <img src={mobileSlider1} alt="Local business directory app interface" className="w-full h-full object-cover" />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="h-[400px] rounded-none md:rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 md:hover:scale-105">
-                      <img src={mobileSlider2} alt="Small business owner managing online store" className="w-full h-full object-cover" />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="h-[400px] rounded-none md:rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 md:hover:scale-105">
-                      <img src={mobileSlider3} alt="Modern POS system interface" className="w-full h-full object-cover" />
-                      </div>
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
-                
                 {/* CTA Buttons at Bottom */}
                 <div className="flex flex-col md:flex-row gap-4 mt-4">
                   <Button className="bg-gradient-to-r from-slate-900 to-slate-700 hover:from-slate-800 hover:to-slate-600 text-white px-6 py-3 rounded-xl font-medium text-sm shadow-xl hover:shadow-2xl transition-all duration-300">
