@@ -248,6 +248,21 @@ const Index = () => {
                   Find a business or Start your online business!
                 </h2>
                 
+                {/* GoLar Introduction */}
+                <div className="text-center max-w-2xl px-6 mb-6">
+                  <p className="text-foreground/90 leading-relaxed">
+                    Hi, I&apos;m GoLar — nice to meet you!<br />
+                    I&apos;m here to gather and share info about meaningful but hard-to-find individuals and organizations — like community fundraisers and free service providers — so I can better support you when you need it most. 💜
+                  </p>
+                  <p className="text-foreground/90 leading-relaxed mt-3">
+                    If you know any such people or groups, I&apos;d love your suggestion!<br />
+                    Meanwhile, my team — Mizu, Min, and I — are here to help you discover businesses and book services with ease.
+                  </p>
+                  <p className="text-foreground/90 leading-relaxed mt-3">
+                    Enjoy exploring!
+                  </p>
+                </div>
+                
                 {/* Desktop Image Slider */}
                 <div className="px-2 w-full max-w-3xl">
                   <Swiper spaceBetween={16} slidesPerView={1.8} centeredSlides={true} autoplay={{
