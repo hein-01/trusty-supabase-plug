@@ -233,6 +233,7 @@ export type Database = {
           description: string | null
           email: string | null
           facebook_page: string | null
+          featured_business: number
           google_map_location: string | null
           id: string
           image_url: string | null
@@ -275,6 +276,7 @@ export type Database = {
           description?: string | null
           email?: string | null
           facebook_page?: string | null
+          featured_business?: number
           google_map_location?: string | null
           id?: string
           image_url?: string | null
@@ -317,6 +319,7 @@ export type Database = {
           description?: string | null
           email?: string | null
           facebook_page?: string | null
+          featured_business?: number
           google_map_location?: string | null
           id?: string
           image_url?: string | null
@@ -632,16 +635,10 @@ export type Database = {
         Args: { business_id: string; pos_website_option: number }
         Returns: Json
       }
-      check_admin_rate_limit: {
-        Args: { user_email: string }
-        Returns: boolean
-      }
-      check_rate_limit: {
-        Args: { user_email: string }
-        Returns: boolean
-      }
+      check_admin_rate_limit: { Args: { user_email: string }; Returns: boolean }
+      check_rate_limit: { Args: { user_email: string }; Returns: boolean }
       get_pending_businesses_with_emails: {
-        Args: Record<PropertyKey, never>
+        Args: never
         Returns: {
           created_at: string
           id: string
@@ -700,10 +697,7 @@ export type Database = {
         Args: { attempt_success: boolean; user_email: string }
         Returns: undefined
       }
-      provision_admin_user: {
-        Args: { user_email: string }
-        Returns: undefined
-      }
+      provision_admin_user: { Args: { user_email: string }; Returns: undefined }
       search_businesses: {
         Args: {
           category_id?: string
@@ -724,6 +718,7 @@ export type Database = {
           description: string | null
           email: string | null
           facebook_page: string | null
+          featured_business: number
           google_map_location: string | null
           id: string
           image_url: string | null
@@ -758,6 +753,12 @@ export type Database = {
           website: string | null
           zip_code: string | null
         }[]
+        SetofOptions: {
+          from: "*"
+          to: "businesses"
+          isOneToOne: false
+          isSetofReturn: true
+        }
       }
       verify_totp_token: {
         Args: { secret_key: string; token_input: string }
