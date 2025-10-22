@@ -263,30 +263,6 @@ const Index = () => {
                   </p>
                 </div>
                 
-                {/* Desktop Image Slider */}
-                <div className="px-2 w-full max-w-3xl">
-                  <Swiper spaceBetween={16} slidesPerView={1.8} centeredSlides={true} autoplay={{
-                  delay: 4500,
-                  disableOnInteraction: false
-                }} modules={[Autoplay]} className="desktop-business-slider">
-                    <SwiperSlide>
-                      <div className="h-[300px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
-                        <img src={mobileSlider1} alt="Local business directory app interface" className="w-full h-full object-cover object-top" />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="h-[300px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
-                        <img src={mobileSlider2} alt="Small business owner managing online store" className="w-full h-full object-cover object-top" />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="h-[300px] rounded-xl overflow-hidden shadow-md w-full transition-all duration-300 hover:scale-105">
-                        <img src={mobileSlider3} alt="Modern POS system interface" className="w-full h-full object-cover object-top" />
-                      </div>
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
-                
                 {/* Desktop CTA Buttons below slider */}
                 <div className="flex flex-row gap-4 mt-4">
                   <Button className="bg-gradient-to-r from-slate-900 to-slate-700 hover:from-slate-800 hover:to-slate-600 text-white px-6 py-3 rounded-xl font-medium text-sm shadow-xl hover:shadow-2xl transition-all duration-300">
