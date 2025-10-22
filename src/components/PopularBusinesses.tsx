@@ -46,7 +46,7 @@ const PopularBusinesses = () => {
         .select(`
           *
         `)
-        .eq('searchable_business', true)
+        .eq('featured_business', 1)
         .order('created_at', { ascending: false })
         .limit(5);
         
