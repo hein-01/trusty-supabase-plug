@@ -113,15 +113,6 @@ const PopularBusinesses = () => {
             {/* Fixed sixth card - Discover more shops */}
             <SwiperSlide key="discover-more" className="!w-[260px] sm:!w-[290px]">
               <Card className="group w-[290px] h-[555px] flex flex-col shadow-lg hover:shadow-2xl transition-all duration-300 mx-auto bg-gradient-to-br from-slate-800 to-slate-900">
-                <div className="relative overflow-hidden rounded-t-lg h-[290px] bg-gradient-to-br from-slate-700 to-slate-800">
-                  <img
-                    src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=290&h=290&fit=crop"
-                    alt="Discover more shops"
-                    className="w-full h-[290px] opacity-30"
-                    style={{ objectFit: 'none', objectPosition: 'top left' }}
-                  />
-                </div>
-                
                 <CardContent className="flex-1 p-3 flex flex-col justify-center items-center text-center">
                   <div className="space-y-4">
                     <h3 className="text-white text-lg font-bold">
@@ -170,15 +161,6 @@ const PopularBusinesses = () => {
             {/* Fixed sixth card - Discover more shops (Mobile) */}
             <SwiperSlide key="discover-more-mobile" className="!w-[290px] last:!mr-4">
               <Card className="group w-[290px] h-[555px] flex flex-col shadow-lg hover:shadow-2xl transition-all duration-300 mx-auto bg-gradient-to-br from-slate-800 to-slate-900">
-                <div className="relative overflow-hidden rounded-t-lg h-[290px] bg-gradient-to-br from-slate-700 to-slate-800">
-                  <img
-                    src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=290&h=290&fit=crop"
-                    alt="Discover more shops"
-                    className="w-full h-[290px] opacity-30"
-                    style={{ objectFit: 'none', objectPosition: 'top left' }}
-                  />
-                </div>
-                
                 <CardContent className="flex-1 p-3 flex flex-col justify-center items-center text-center">
                   <div className="space-y-4">
                     <h3 className="text-white text-lg font-bold">
